@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "endpoint": "/movies",
+      "destination": {
+        "uri": "http://localhost:8090/movies/",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/busca",
+      "destination": {
+        "uri": "https://www.google.com.br",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/songs",
+      "destination": {
+        "uri": "http://localhost:8091/songs/",
+        "requiresAuthentication": "false"
+      }
+    }
+  ],
+  "authenticationService": {
+    "uri": "http://localhost:8080/api/auth/"
+  }
+}
